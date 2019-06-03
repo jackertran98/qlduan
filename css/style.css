@@ -1,0 +1,632 @@
+body{
+    margin:0;
+    padding:0; 
+}
+    /* css header */
+.header{
+    height: 62px    ;
+    background-color:#393939;
+}
+.tdh {
+    display: flex;
+}
+
+.phone,.day,.mail {
+    display: flex;
+    line-height: 62px;
+}
+
+.phone,.day {
+    margin-right: 50px;
+}
+.header i {
+    margin-right: 10px;
+    color: #f4c233;
+}
+
+.header p {
+    color: #dddddd;
+    font-weight: bold;
+    font-size: 15px;
+}
+.search i {
+    position: absolute;
+    right: 15px;
+    margin-top: 22px;
+    color: #dddddd;
+}
+
+.search input {
+    position: absolute;
+    right: 15px;
+    height:40px;
+    margin-top: 11px;
+    background-color: #414141;
+    border-radius: 21px;
+    padding-left: 22px;
+    width: 207px;
+    border: none;
+    font-size: 14px;
+}
+.search input:focus{
+    outline: none;
+    color:white;
+}
+
+
+/* css menu */
+.menulist ul li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.menulist ul li a {
+    display: block;
+    height: 45px;
+    text-decoration: none;
+    line-height: 45px;
+    color: #544a4a;
+    font-weight: bold;
+}
+
+.menulist {
+    height: 90px;
+    line-height: 90px;
+}
+
+.menulist a:hover {
+    background-color: #f4c233;
+    transition: 0.2s ease 0s;;
+    border-radius: 5px;
+    color:white;
+}
+
+.logo {
+    line-height: 90px;
+}
+.active_home{
+    background-color: #f4c233;
+    border-radius: 5px;
+    color: white;
+}
+.prosset {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    top: 24px;
+}
+.prosset p {
+    width: 40px;
+    height: 40px;
+    
+    margin-left: 10px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    background-color:#ffffff;
+}
+.respn{
+    display: none;
+}
+.prosset p:hover{
+    background-color: #f4c233;
+    
+}
+.prosset p:hover i{
+    color:white;
+}
+.prosset i {
+    color: #f4c233;
+}
+.prosset i:hover{
+    color: white;
+}
+p.cartt{
+    background-color: #eeeeee;
+}
+p.cartt .stt {
+    width: 21px;
+    height: 21px;
+    border-radius: 25px;
+    background-color: #f4c212;
+    position: absolute;
+    top: -6px;
+    line-height: 21px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.co-dinh-menu{
+    position: fixed;
+    width:100%;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.35);
+ }
+ .back-to-top {
+    width: 40px;
+    height: 40px;
+    background: rgba(244, 194, 51, 0.78);
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right:0;
+    bottom: 10px;
+    margin-left: -25px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+ }
+ 
+
+  /* css slide */
+
+.content{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 60%;
+    height: 330px;
+    background-color:#00000052;
+
+}
+.content2{
+    left:30%;
+}
+.content p:first-child {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 58px;
+    padding-left: 30px;
+}
+
+.content p:nth-child(2) {
+    padding-left: 30px;
+    color: white;
+}
+.content span {
+    border: 3px dashed white;
+    color: #f4c233;
+    padding: 8px;
+    margin: 0px 7px;
+}
+
+button.bt1 {
+    margin-left: 30px;
+    background-color: #f4c233;
+    border: none;
+}
+
+button.bt1:hover {
+    background-color: black;
+}
+button.bt2 {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+button.bt2:hover {
+    background-color: black;
+    color: white;
+}
+.back-to-top.hien-ra{
+    visibility: visible;
+    opacity: 1;
+ }
+
+/* css main-gioithieu */
+
+.gioithieu {
+    margin-top: 70px;
+}
+button.btn.btn-success {
+    border-radius: 25px;
+    width: 170px;
+    line-height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f4c233;
+    border: none;
+}
+button.btn.btn-success:hover {
+    opacity: .7;
+}
+.btt_gt {
+    text-align: center;
+}
+.gtleft p{
+    text-align: justify;
+}
+
+
+/*css main-dichvu */
+.dichvu {
+    text-align: center;
+    margin-top: 87px;
+}
+
+.dichvu h2 {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.dv {
+    height: 256px;
+    border: 1px solid #0000002e;
+    border-radius: 2px;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+
+.dv i {
+    margin-top: 48px;
+    font-size: 80px;
+    color: #f4c233;
+}
+
+.dv h3 {
+    font-weight: bold;
+}
+
+.dv:hover {
+    box-shadow: 0px 3px 15px -1px #0000003b;
+    color: #f4c233;
+}
+.row.bottom {
+    margin-top: 40px;
+}
+
+/*css main-why */
+
+.col-md-4.con_why {
+    display: flex;
+}
+.icon i {
+    width: 70px;
+    height: 50px;
+    color: #f4c233;
+    font-size: 45px;
+}
+.nd h4 {
+    font-weight: bold;
+    font-size:20px; 
+}
+
+.nd p {
+    font-size: 14px;
+}
+.why {
+    text-align: center;
+    margin-top: 87px;
+    margin-bottom: 70px;
+}
+
+.why h3 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.why p {
+    font-size: 20px;
+    font-style: oblique;
+}
+.row.row2 {
+    margin-top: 50px;
+}
+
+/*css footer */
+.footer{
+    background-color: #292c2f;
+    height: 300px;
+    margin-top: 87px;
+    color:white;
+    padding-top: 50px;
+}
+.col-md-4.col-footer i {
+    margin-right: 18px;
+    font-size: 23px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #3a35358f;
+    border: none;
+    color: #f4c233;
+}
+
+.lienhe i {
+    font-size: 30px;
+    color: #f4c233;
+    margin-right: 10px;
+}
+.contac p{
+    margin:0px;
+}
+
+/*css gioithieu */
+
+
+/* css du_an */
+.search_du_an h3{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cac_du_an{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+select.du_an{
+    height: 30px;
+    width: 200px;
+    background-color: #f4c233;
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+}
+button.du_an {
+    background-color: #f4c233;
+    border:none;
+    height: 30px;
+    margin-left:30px;
+}
+select:focus{
+    outline: none;
+    
+}
+option {
+    position: absolute;
+    cursor: pointer;
+}
+.name_du_an{
+    display: flex;
+}
+.content_du_an{
+    width: 50%;
+    height: 340px;
+    background-color:#279dc1;
+    padding: 25px 49px;
+    color:white;
+}
+.image_du_an{
+    width: 50%;
+    height: 340px;
+    text-align: center;
+    background-color: #88848429;
+    position: relative;
+    cursor: pointer;
+}
+.image_du_an img{
+    width: 280px;
+    height: 230px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 10%;
+    transition: all .5s ease;
+}
+.image_du_an:hover img {
+    transform: scale(1.4);
+}
+.content_du_an button {
+    background-color: #279dc1;
+    border: 2px solid white;
+    color: white;
+    width: 110px;
+    height: 35px;
+    font-size: 11px;
+    transition: .2s;
+    font-weight: bold;
+}
+
+.content_du_an h5 {
+    font-size: 28px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "AvenirNext";
+}
+
+.content_du_an p {
+    color: #ffffffd4;
+    font-family: "ProximaNova";
+}
+.content_du_an button:hover{
+    background-color: white;
+    color: black;
+}
+.hulu .content_du_an button:hover{
+    background-color: white;
+    color: black;
+}
+.hulu1 .image_du_an:before {
+    content: "";
+    border-width: 28px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent;
+    border-right-color: #edecec;
+    width: 0;
+    height: 0;
+    top: 42%;
+    left: -10%;
+}
+.hulu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.hulu .content_du_an{
+    background-color: #91b93e;
+}
+.hulu .image_du_an::before{
+    content: "";
+    border-width: 28px;
+    border-style: solid;
+    position: absolute;
+    border-color: transparent;
+    border-left-color: #edecec;
+    width: 0;
+    height: 0;
+    top: 42%;
+    right: -10%;
+}
+.hulu .content_du_an button {
+    background-color: #91b93e;
+    border: 2px solid white;
+    color: white;
+    width: 110px;
+    height: 35px;
+    font-size: 11px;
+    transition: .2s;
+    font-weight: bold;
+}
+.name_du_an.hulu1.hulu1res .content_du_an {
+    background-color: #ffa500d1;
+}
+
+.name_du_an.hulu1.hulu1res button {
+    background-color: #fcb241;
+}
+.name_du_an.hulu1.hulu1res button:hover{
+    background-color:white;
+}
+
+/*css Ä‘Äƒng nháº­p */
+.form-signin
+{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading, .form-signin .checkbox
+{
+    margin-bottom: 10px;
+}
+.form-signin .checkbox
+{
+    font-weight: normal;
+}
+.form-signin .form-control
+{
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus
+{
+    z-index: 2;
+}
+.form-signin input[type="text"]
+{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"]
+{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.account-wall
+{
+    margin-top: 20px;
+    padding: 40px 0px 20px 0px;
+    background-color: #f7f7f7;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.login-title
+{
+    color: #555;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+.profile-img
+{
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.need-help
+{
+    margin-top: 10px;
+}
+.new-account
+{
+    display: block;
+    margin-top: 10px;
+}
+.main{
+    margin-top: 55px;
+}
+.gioithieu img{
+    margin:20px auto;
+}
+/* responsive */
+@media screen and (max-width: 767px) {
+    .footer{
+        height: 600px;
+    }
+    .content{
+        top:0% !important;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .phone,.day,.mail{
+        margin-right: 0px;
+    }
+    .header{
+        height: 200px !important;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .content p{
+        font-size:14px !important;
+        
+    }
+    
+}
+@media screen and (max-width: 1224px) {
+    .menulist ul li{
+        display: none;
+    }
+    .header p{
+        font-size: 12px;
+    }
+    .header .search input{
+        display: none;
+    }
+}
